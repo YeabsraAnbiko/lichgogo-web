@@ -1,8 +1,3 @@
-import Image from 'next/image';
-import Team from '@/app/ui/team';
-import InputField from '@/app/ui/input-field';
-import MinCard from '@/app/ui/minCard';
-
 export default function Page() {
   return (
         

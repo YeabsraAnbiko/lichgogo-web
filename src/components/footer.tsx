@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function Footer(props) {
+export default function Footer() {
   return (
         <footer className="footer-bg text-white relative">
             <div className="container mx-auto px-6 py-12 footer-content">

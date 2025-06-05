@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import InputField from '@/components/input-field';
 import MinCard from '@/components/minCard';
@@ -180,7 +179,7 @@ export default function Page() {
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Experience Campus Life</h2>
                             <p className="text-xl text-gray-600 mb-8">
-                            Our vibrant campus community offers endless opportunities for growth, learning, and connection. From state-of-the-art facilities to diverse student organizations, there's something for everyone at LBSE.
+                            {" Our vibrant campus community offers endless opportunities for growth, learning, and connection. From state-of-the-art facilities to diverse student organizations, there's something for everyone at LBSE. "}
                             </p>
                             <div className="space-y-4">
                                 <div className="flex items-start">
@@ -360,7 +359,7 @@ export default function Page() {
                         <div className="text-center mb-16">
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
                             <p className="text-xl text-gray-600">
-                            Have questions? We're here to help. Send us a message and we'll respond as soon as possible.
+                            {"Have questions? We're here to help. Send us a message and we'll respond as soon as possible."}
                             </p>
                         </div>
                         <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
