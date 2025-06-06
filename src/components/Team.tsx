@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 interface SocialLink {
-  platform: 'github' | 'linkedin' | 'twitter';
+  platform: 'github' | 'linkedin' | 'twitter' | 'facebook' | 'instagram';
   url: string;
 }
 
