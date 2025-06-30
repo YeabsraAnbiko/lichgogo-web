@@ -8,8 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ThemeToggle from '@/components/ThemeToggle';
 
 const navItems = [
-  { name: 'Home', href: '/' },
-  { name: 'academics', href: '/academics' },
+  { name: 'Academics', href: '/academics' },
   { name: 'Clubs', href: '/clubs' },
 ];
 
@@ -37,7 +36,7 @@ export default function Navbar() {
     <header className="bg-white dark:bg-gray-900 backdrop-blur-sm shadow-md sticky top-0 z-50 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-blue-600 dark:text-blue-400">
-          MySite
+          Home
         </Link>
 
         {/* Desktop Nav */}

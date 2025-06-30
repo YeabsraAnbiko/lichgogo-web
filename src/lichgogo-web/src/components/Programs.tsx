@@ -20,7 +20,7 @@ const programs = [
   }
 ]
 
-const Programs = () => {
+const Programs = (): JSX.Element => {
   return (
     <section id="programs" className="py-20 bg-gray-50">
       <div className="container mx-auto px-6">
@@ -45,5 +45,5 @@ const Programs = () => {
   )
 }
 
-export default Programs;
+export default Programs
 
