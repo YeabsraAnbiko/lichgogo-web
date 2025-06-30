@@ -6,12 +6,12 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import clsx from 'clsx';
 import { motion, AnimatePresence } from 'framer-motion';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'academics', href: '/academics' },
   { name: 'Clubs', href: '/clubs' },
-  { name: 'Login', href: '/login' },
 ];
 
 export default function Navbar() {
@@ -35,7 +35,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-white dark:bg-gray-900 shadow-md sticky top-0 z-50 transition-colors">
+    <header className="bg-white dark:bg-gray-900 backdrop-blur-sm shadow-md sticky top-0 z-50 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold text-blue-600 dark:text-blue-400">
           MySite
@@ -62,13 +62,13 @@ export default function Navbar() {
 
         <div className="flex items-center gap-4">
           {/* Dark Mode Toggle */}
-          <button
-            onClick={toggleDarkMode}
-            className="text-gray-700 dark:text-gray-300"
-            aria-label="Toggle Dark Mode"
+          <ThemeToggle/>          <Link
+            className="text-gray-700 dark:text-gray-300 dark:hover:text-blue-400 text-xl font-bold dark:border dark:border-gray-300 dark:hover:border-blue-400 rounded px-2"
+            aria-label="login"
+            href="/login"
           >
-            {darkMode ? '🌙' : '☀️'}
-          </button>
+          login 
+          </Link>
 
           {/* Mobile Menu Toggle */}
           <button
