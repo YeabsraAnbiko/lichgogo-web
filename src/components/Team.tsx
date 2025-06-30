@@ -1,4 +1,3 @@
-// src/components/Team.tsx
 import Image from 'next/image';
 
 interface SocialLink {

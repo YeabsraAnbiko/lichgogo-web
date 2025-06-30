@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import InputField from '@/components/input-field';
 import MinCard from '@/components/minCard';
-import Team from '@/components/Team';
-import { devTeams } from '@/lib/contents/devTeam';
+import Developers from "@/components/Developers"
+import ContactForm from '@/components/ContactForm';
 
 export default function Page() {
   return (
@@ -326,60 +325,9 @@ export default function Page() {
                 </div>
             </section>
             {/* Meet Our Team Section */}
-            <section className="py-20 bg-gradient-to-b from-gray-50 to-white overflow-hidden">
-                <div className="container mx-auto px-6">
-                    <div className="text-center mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Meet Our Development Team</h2>
-                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        The talented individuals behind our success, working together to create exceptional educational experiences.
-                        </p>
-                    </div>
-                        <div className="flex gap-4 md:gap-6 lg:gap-8 transition-transform duration-500 ease-out" id="teamSlider">
-                        {/*people*/}
-        {devTeams.map((member, index) => (
-          <Team key={index} {...member} />
-        ))}
-                        </div>
-                    <div className="relative px-4 md:px-6 lg:px-8">
-                        <div className="flex justify-center mt-8 gap-4">
-                            <button className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300" id="prevBtn">
-                                <i className="ri-arrow-left-s-line text-2xl text-gray-600"></i>
-                            </button>
-                            <button className="w-12 h-12 flex items-center justify-center rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300" id="nextBtn">
-                                <i className="ri-arrow-right-s-line text-2xl text-gray-600"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
+                <Developers />
             {/* Contact Form */}
-            <section id="contact" className="py-20 bg-white">
-                <div className="container mx-auto px-6">
-                    <div className="max-w-4xl mx-auto">
-                        <div className="text-center mb-16">
-                            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Get in Touch</h2>
-                            <p className="text-xl text-gray-600">
-                            {"Have questions? We're here to help. Send us a message and we'll respond as soon as possible."}
-                            </p>
-                        </div>
-                        <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <InputField field="First Name" type="text" />
-                        <InputField field="Last Name" type="text" />
-                        <InputField field="Email" type="email" />
-                        <InputField field="Phone" type="tel" />
-                            <div className="md:col-span-2">
-                                <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                                <textarea rows="4" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required></textarea>
-                            </div>
-                            <div className="md:col-span-2 text-center">
-                                <button type="submit" className="px-8 py-3 bg-primary text-white !rounded-button hover:bg-primary/90">
-                                    Send Message
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </section>
+                <ContactForm />
         </main>
         </div>
         
